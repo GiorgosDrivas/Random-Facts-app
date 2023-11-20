@@ -1,0 +1,33 @@
+.wrap {
+    height: 100vh;
+}
+
+.quote_wrap {
+    height: 300px;
+    width: 100%;
+}
+
+#qurrentFact {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.title {
+    letter-spacing: 3px;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    left: 100px;
+    background-color: #000;
+    bottom: calc(100% - 50%);
+}
+
+.title::after {
+    right: 100px;
+    left: unset;
+}
